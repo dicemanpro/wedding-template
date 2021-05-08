@@ -16,10 +16,10 @@
 	<header id="myHeader" class="desktopShow">
 		<!-- <h2><a href="#">Website Logo</a></h2> -->
 		<ul>
-			<li><a href="#">Место и время</a></li>
-			<li><a href="#">О вечеринке</a></li>
-			<li><a href="#">Наши пожелания</a></li>
-			<li><a href="#">Нам помогают</a></li>
+			<li><a href="#mesto">Место и время</a></li>
+			<li><a href="#about">О вечеринке</a></li>
+			<li><a href="#wishes">Наши пожелания</a></li>
+			<li><a href="#orgs">Нам помогают</a></li>
 		</ul>
 	</header>
 
@@ -29,15 +29,16 @@
 		<video autoplay muted loop class="background-image">
 			<source src="assets/img/back.mp4" type="video/mp4">
 		</video>
-		<!-- <div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div> -->
 		<h3>Приглашение на свадебную вечеринку</h3>
 		<h1>Стаса и Насти</h1>
-		<p>5.08.2021</p>
-		<!-- <a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" class="btn">Download it Here</a> -->
+		<p>5 августа 2021</p>		
+		<img src="assets/img/down-arrow.png"/>
+		<!-- TODO scroll-->			
 	</section>
 	
 	
 	<section class="map">
+		<a name="mesto"></a>
 		<div class="half">
 			<h3 class="title">Место и время</h3>
 			<h4>Место</h4>
@@ -55,6 +56,7 @@
 	</section>
 	
 	<section class="features">
+		<a name="about"></a>
 		<div>
 			<h3 class="title">О вечеринке</h3>
 		</div>
@@ -68,7 +70,7 @@
 			<li>
 				<img src="assets/img/food.png" width="100%">
 				<h4>Еда</h4>
-				<p>Обещаем удивить всеми оттенками вегетарианской и веганской кухни, но не переживайте - голодными вы не останетесь.</p>
+				<p>Обещаем удивить всеми оттенками вегетарианской и веганской кухни, но не переживайте — голодными вы не останетесь.</p>
 			</li>
 			<li>
 				<img src="assets/img/drinks.png" width="100%">
@@ -108,6 +110,7 @@
 	</section>
 
 	<section class="wishes">
+		<a name="wishes"></a>
 		<h3 class="title">Наши пожелания</h3>	
 		<ul class="grid">
 			<li>
@@ -125,6 +128,7 @@
 			<li>
 				<p>Дресс-код</p>
 				<p>Строгого дресс-кода нет, но будем признательны, если вы поддержите нашу цветовую гамму природных оттенков:</p>
+				<!-- TODO: fix image margin -->
 				<img src="assets/img/colors.png">
 				<p>По желанию можете сделать вечерний образ более свободным и необычным.</p>
 			</li>
@@ -134,25 +138,26 @@
 
 
 	<section class="orgs">
+		<a name="orgs"></a>
 		<h3 class="title">Нам помогают</h3>
 		<ul class="grid">
 			<li>
 				<img src="assets/img/alina.png">
 				<p>Организатор</p>
 				<p>Алина Матиевская</p>
-				<p>+375 29 384-04-88<br>t.me/alimattie</p>
+				<p>+375 29 384-04-88<br><a href="http://t.me/alimattie">t.me/alimattie</a></p>
 			</li>
 			<li>
 				<img src="assets/img/artiom.png">
 				<p>Ведущий</p>
 				<p>Артём Валентинович</p>
-				<p>+375 29 123-45-67<br>t.me/tema_vernik</p>
+				<p>+375 29 xxx-xx-xx<br><a href="http://t.me/tema_vernik">t.me/tema_vernik</a></p>
 			</li>
 		</ul>		
 	</section>
 
 	<section class="feedback">
-		<p>Заполните пожалуйста форму ниже</p>
+		<p>Заполните, пожалуйста, форму ниже — это поможет сделать вечер приятным и беззаботным для всех</p>
 		<iframe class="desktopShow" src="https://docs.google.com/forms/d/e/1FAIpQLScLfjegfHHD8CWhFg5GWtxCDqhwejIoScjgVK4jxKJxJCvoFg/viewform?embedded=true" width="640" height="1252" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
 		<iframe class="mobileShow" src="https://docs.google.com/forms/d/e/1FAIpQLScLfjegfHHD8CWhFg5GWtxCDqhwejIoScjgVK4jxKJxJCvoFg/viewform?embedded=true" width="350" height="1400" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
 	</section>
