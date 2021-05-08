@@ -66,7 +66,7 @@ section{
 
 @media (max-width: 600px){
 	section{
-		padding: 80px 30px;
+		padding: 80px 20px;
 	}
 }
 
@@ -80,8 +80,8 @@ section h3.title{
 
 section p{
 	max-width: 800px;
-	text-align: center;
-	margin-bottom: 35px;
+	text-align: left;
+	margin-bottom: 20px;
 	/* padding: 0 20px; */
 	line-height: 1.5;
 }
@@ -308,7 +308,7 @@ header ul li:last-child{
 
 .plan{
 	color: #ffffff;
-	background-image: linear-gradient(to left,#ae6355, #a15c4f);
+	background-image: linear-gradient(to left,#ae6356, #a15c4f);
 }
 
 .plan div{
@@ -317,49 +317,107 @@ header ul li:last-child{
 }
 
 .plan h3.title{
-	color: #ffffff;
-	
+	color: #ffffff;	
 }
 
-.plan
+.plan .grid{
+	margin-top: 50px;
+}
+
+.plan .grid li p:first-child{
+	font-weight: 10;
+	font-size: 22px;
+}
+
+.plan .grid li p:last-child{
+	font-size: 14px;
+}
+
 
 /*--------------------
- 	Our Work Section
----------------------*/
+ 	Wishes Section
+--------------------*/
 
-.оur-work{
-	background-color: #fff;
+.wishes .grid{
+	flex-direction: column;
+}
+.wishes .grid li{
+	margin: 20px 0px;
+	flex-basis: 30%;
+	text-align: left;
+	background-color: #FBFBFB;
 }
 
-.our-work .grid li{
-	padding: 20px;
-	height: 350px;
-	border-radius: 3px;
-
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-	background-color: #333;
+.wishes .grid li h4{
+	margin: 10px;
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+	text-align: left;
 }
 
-.our-work .grid li.small{
-	flex-basis: 40%;
+.wishes .grid li p{
+    margin: 15px;
+	text-align: left;
 }
 
-.our-work .grid li.large{
-	flex-basis: 60%;
+.wishes .grid li img{
+    margin-left: 15px;
+	height: 1.5rem;
 }
 
+.wishes .grid li p:nth-child(even){
+    font-size: 14px;
+}
 
 @media (max-width: 1000px){
 
-	.our-work .grid li.small,
-	.our-work .grid li.large{
+	.wishes .grid li{
+		flex-basis: 70%;
+	}
+
+	.wishes .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.wishes .grid li{
 		flex-basis: 100%;
 	}
 
 }
 
+
+/*--------------------
+ 	Orgs Section
+---------------------*/
+
+.orgs{
+	background-color: #43484B;	
+	color: #ffffff;	
+}
+
+.orgs .grid li p{
+	margin-left: 25px;
+}
+
+.orgs .grid li p:nth-child(even){
+	font-size: 12px;
+}
+
+.orgs h3.title{
+	color: #ffffff;	
+}
+
+.orgs img{
+	width: 150px;
+	border-radius: 50%;
+}
 
 
 /*----------------------
@@ -417,56 +475,6 @@ header ul li:last-child{
 
 
 
-/*--------------------
- 	Wishes Section
---------------------*/
-.wishes .grid li{
-	margin: 0 10px;
-	flex-basis: 30%;
-	text-align: center;
-	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-}
-
-.wishes .grid li i{
-    font-size: 50px;
-    color: #2196F3;
-    margin-bottom: 25px;
-}
-
-.wishes .grid li h4{
-	color: #555;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-	text-align: left;
-}
-
-.wishes .grid li p{
-    margin: 0;
-	text-align: left;
-}
-
-@media (max-width: 1000px){
-
-	.wishes .grid li{
-		flex-basis: 70%;
-		margin-bottom: 65px;
-	}
-
-	.wishes .grid li:last-child{
-		margin-bottom: 0;
-	}
-
-}
-
-
-@media (max-width: 600px){
-
-	.wishes .grid li{
-		flex-basis: 100%;
-	}
-
-}
 
 
 /*---------------------
@@ -475,8 +483,25 @@ header ul li:last-child{
 
 .feedback{
 	background-color: #f7f7f7;
+	align-items: center;
 }
 
+.mobileShow{
+	display: none;
+}
+
+.desktopShow{
+	display: block;
+}
+
+@media (max-width: 640px) { 
+	.mobileShow {display: block;}
+}
+
+
+@media (max-width: 640px) { 
+	.desktopShow {display: none;}
+}
 
 
 
@@ -487,47 +512,69 @@ header ul li:last-child{
 
 footer{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
 	color: #fff;
-	background-color: #000000;
-	padding: 60px 0;
+	
+}
+
+footer .left{
+	width: 50%;
+	background-color: #E6E5E6;
+	text-align: end;
+}
+
+footer .right{
+	width: 50%;
+	background-color: #281E1C;
+	
+}
+
+footer img{
+	width: 80%
 }
 
 footer ul{
 	display: flex;
-	margin-bottom: 25px;
-	font-size: 32px;
+	flex-direction: column;
+	margin-left: 10%;
+	margin-top: 5%;
 }
 
 footer ul li{
-	margin: 0 8px;	
+	margin-top: 20px;
 }
 
-footer ul li:first-child{
-	margin-left: 0;	
+footer ul li:nth-child(3){
+	margin-top: 0;
+	font-size: 12px;
+}
+
+footer ul li:nth-child(5){
+	margin-top: 0;
+	font-size: 12px;
 }
 
 footer ul li:last-child{
-	margin-right: 0;	
+	margin-top: 20%;
+	font-family: Caveat;
+	font-size: 25px;	
 }
 
-footer p{
-	text-transform: uppercase;
-	font-size: 14px;
-	color: rgba(255,255,255,0.6);
-	margin-bottom: 10px;
-}
-
-footer p a{
-	color: #fff;
-}
 
 @media (max-width: 700px){
 
 	footer{
-		padding: 80px 15px;
+		flex-direction: column;
+	}
+
+	footer .left{
+		width: 100%;
+	}
+	footer .right{
+		width: 100%;
+	}
+
+	footer ul li:last-child{
+		margin-bottom: 50px;
 	}
 
 }
