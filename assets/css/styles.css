@@ -237,7 +237,7 @@ header ul li:last-child{
 .hero img{
 	width: 30px;
 	position: absolute;
-	margin-top: 50%;
+	margin-top: 80vh;
 }
 
 .hero p{
@@ -279,10 +279,6 @@ header ul li:last-child{
 		padding: 15px 40px;
 	}
 
-	.hero img{
-		position: relative;
-	}
-
 	.hero{
 		padding: 80px 30px;
 	}
@@ -295,25 +291,46 @@ header ul li:last-child{
 ---------------------*/
 
 .map{
-	align-items: stretch;
-	flex-direction: row;
 	background-color: #43484b;
 	color: #ffffff;
 	font-style: normal;
+}
+
+.map div{
+	width: 100%;
+}
+
+.map .half{
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.listmap{
+	width: 500px;
 }
 
 .map h3.title{
 	color: #ffffff;
 }
 
-.map div.half{
-	width: 50%;
-} 
-
 .map p{
 	margin-top: 10px;
 	font-size: 13px;
 	text-align: left;	
+}
+
+@media (max-width: 600px){
+
+	.map .half{
+		flex-direction: column;
+	}
+
+	.listmap{
+		width: 100%;
+	}
 }
 
 
