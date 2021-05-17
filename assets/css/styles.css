@@ -236,8 +236,8 @@ header ul li:last-child{
 
 .hero img{
 	width: 30px;
-	position: absolute;
-	margin-top: 80vh;
+	position: relative;
+	margin-top: 50px;
 }
 
 .hero p{
