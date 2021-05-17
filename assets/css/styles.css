@@ -16,6 +16,8 @@ html{
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 27px;
+	scroll-behavior: smooth;
+	scroll-padding: 66px 0 0 50px;
 }
 
 ul, nav{
@@ -318,7 +320,7 @@ header ul li:last-child{
 
 .map p{
 	margin-top: 10px;
-	font-size: 13px;
+	font-size: 14px;
 	text-align: left;	
 }
 
@@ -433,7 +435,7 @@ header ul li:last-child{
 }
 
 .wishes .grid li p:nth-child(even){
-    font-size: 13px;
+    font-size: 14px;
 }
 
 @media (max-width: 1000px){
@@ -537,7 +539,7 @@ header ul li:last-child{
 }
 
 .features .grid li p{
-	font-size: 13px;
+	font-size: 14px;
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-bottom: 30px;
@@ -552,7 +554,7 @@ header ul li:last-child{
 	}
 
 	.features .grid li p{
-		font-size: 17px;
+		font-size: 14px;
 	}
 
 	.features .grid li:last-child{
