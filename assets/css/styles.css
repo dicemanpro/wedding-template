@@ -199,6 +199,7 @@ header ul li:last-child{
 	min-height: 100vh;
 	color: #fff;
 	text-align: center;
+	align-items: flex-start;
 }
 
 .hero .background-image{
@@ -236,13 +237,8 @@ header ul li:last-child{
 	color: #FFFFFF;
 }
 
-.hero img{
-	width: 30px;
-	position: relative;
-	margin-top: 50px;
-}
-
 .hero p{
+	margin-top: 110px;
 	font-family: Caveat;
 	font-size: 45px;
 
