@@ -28,29 +28,11 @@ a{
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-
 	opacity: 0.9;
 }
 
 a:hover{
 	opacity: 1;
-}
-
-a.btn{
-	color: #fff;
-	border-radius: 4px;
-	text-transform: uppercase;
-	background-color: #2196F3;
-	font-weight: 800;
-	text-align: center;
-}
-
-hr{
-	width: 150px;
-	height: 2px;
-	background-color: #2196F3;
-	border: 0;
-	margin-bottom: 80px;
 }
 
 section{
@@ -95,7 +77,6 @@ ul.grid{
 	justify-content: space-between;
 }
 
-
 /*-------------
  	Header
 -------------*/
@@ -114,10 +95,6 @@ header{
 
 header li:hover{
 	text-decoration: underline;
-}
-
-header h2{
-	font-family: 'Quicksand', sans-serif;
 }
 
 header ul{
@@ -171,10 +148,6 @@ header ul li:last-child{
 	header{
 		flex-direction: column;		
 	}
-
-	header h2{
-		margin-bottom: 15px;
-	}
 }
 
 .sticky {
@@ -186,8 +159,6 @@ header ul li:last-child{
   .sticky + .content {
 	padding-top: 102px;
   }
-
-
 
 /*----------------
  	Hero Section
@@ -212,9 +183,7 @@ header ul li:last-child{
 	object-fit: cover;
 	z-index: -1;
 	overflow: hidden;
-	filter: brightness(50%);
-
-   
+	filter: brightness(50%);   
 }
 
 .hero .background-image:after{
@@ -238,7 +207,7 @@ header ul li:last-child{
 }
 
 .hero p{
-	margin-top: 110px;
+	margin-top: 10%;
 	font-family: Caveat;
 	font-size: 45px;
 
@@ -249,10 +218,6 @@ header ul li:last-child{
 	font-weight: lighter;
 	font-size: 24px;
 	line-height: 2rem;
-}
-
-.hero a.btn{
-	padding: 20px 46px;
 }
 
 @media (max-width: 800px){
@@ -271,10 +236,6 @@ header ul li:last-child{
 		font-size: 24px;
 		margin-bottom: 15%;
 		margin-top: 10%
-	}
-
-	.hero a.btn{
-		padding: 15px 40px;
 	}
 
 	.hero{
@@ -451,13 +412,10 @@ header ul li:last-child{
 
 }
 
-
 @media (max-width: 600px){
-
 	.wishes .grid li{
 		flex-basis: 100%;
 	}
-
 }
 
 
@@ -477,8 +435,6 @@ header ul li:last-child{
 .orgs .grid li{
 	text-align: center;
 }
-
-
 
 .orgs .grid li p:nth-child(even){
 	font-size: 12px;
@@ -504,9 +460,6 @@ header ul li:last-child{
 	}
 
 }
-
-
-
 
 /*----------------------
  	Features Section
@@ -569,9 +522,6 @@ header ul li:last-child{
 }
 
 
-
-
-
 /*---------------------
  	Feedback Section
 ---------------------*/
@@ -598,8 +548,6 @@ header ul li:last-child{
 @media (max-width: 640px) { 
 	.desktopShow {display: none;}
 }
-
-
 
 
 /*-------------
